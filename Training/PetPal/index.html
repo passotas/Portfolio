@@ -25,26 +25,23 @@
             </div>
 
             <div class="search_box">
-                <input type="text" name="Type of Pet"  placeholder="Type of Pet" onfocus="dropdown(0)" onblur="dropdown(1)">
-                <div class="dropDown">
-                    <div class="listDropDown">
-                        <div class="item" id="item-1" onmousedown="category(1)">Dog</div>
-                        <div class="item" id="item-2" onmousedown="category(2)">Cat</div>
-                    </div>
-                </div>                        
+                <div class="input_container">
+                    <input type="text" name="Type of Pet"  placeholder="Type of Pet">
+                    <img src="img/Search.png" alt="Icon Pesquisa" class="search_icon">
+                </div>                      
             </div>
 
-            <script>
-                function category(c){
-                    var item = document.getElementById('item-'+c).innerHTML;
-                    document.getElementsByTagName('input')[0].value = item;
-                }
-
-                function dropdown(p){
-                    var e = document.getElementsByClassName('dropDown')[0];
-                    var d = ['block','none'];
-                }
-            </script>
+            <div class="container">
+                <form>
+                    <div class="input_wrapper">
+                        <p class="placeholder">Type of Pet | </p>
+                        <input type="text">
+                    </div>
+                    <button type="submit" class="search_button">
+                        <img src="img/Search.png" alt="Search Icon" id="search_icon">
+                    </button>
+                </form>
+            </div>
 
             
         </section>
@@ -52,12 +49,3 @@
     
 </body>
 </html>
-
-<!--
-    <input type="text" class="search-text" placeholder="Pesquisar...">
-                <a class="search_btn">
-                    <img src="img/Search.png" alt="Search Icon">
-
-                </a>
-            
-            -->
