@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PetPal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <img id="logotipo_petpal" src="img/Logotipo_PetPal.png" alt="Logotipo PetPal">
+        <img id="menu_hamburguer" src="img/menu_hamburguer.png" alt="Menu Hamburguer">
+    </header>
+    
+    <main>
+        <section>
+            <div class="textos_principais">
+                <h2>Open your Heart.</h2>
+                <h2>Open a Home.</h2>
+                <h1>Adopt a Life</h1>
+            </div>
+
+            <div class="dog_pagina_principal">
+                <img src="img/dog_ellipse.png" alt="">
+            </div>
+
+            <div class="search_box">
+                <input type="text" name="Type of Pet"  placeholder="Type of Pet" onfocus="dropdown(0)" onblur="dropdown(1)">
+                <div class="dropDown">
+                    <div class="listDropDown">
+                        <div class="item" id="item-1" onmousedown="category(1)">Dog</div>
+                        <div class="item" id="item-2" onmousedown="category(2)">Cat</div>
+                    </div>
+                </div>                        
+            </div>
+
+            <script>
+                function category(c){
+                    var item = document.getElementById('item-'+c).innerHTML;
+                    document.getElementsByTagName('input')[0].value = item;
+                }
+
+                function dropdown(p){
+                    var e = document.getElementsByClassName('dropDown')[0];
+                    var d = ['block','none'];
+                }
+            </script>
+
+            
+        </section>
+    </main>
+    
+</body>
+</html>
+
+<!--
+    <input type="text" class="search-text" placeholder="Pesquisar...">
+                <a class="search_btn">
+                    <img src="img/Search.png" alt="Search Icon">
+
+                </a>
+            
+            -->
