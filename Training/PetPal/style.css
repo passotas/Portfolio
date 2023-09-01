@@ -56,11 +56,16 @@ html {
     font-weight: 400;
 }
 
+.textos_principais > p {
+    display: none;
+}
+
 .dog_pagina_principal_desktop {
-    display: ;
+    display: none;
 }
 
 .dog_pagina_principal_mobile {
+    display: flex;
     margin-top: 0.938rem;
 }
 
